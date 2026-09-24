@@ -1,0 +1,50 @@
+PERBAIKAN NOTIFIKASI - 21 SEPTEMBER 2026 (update v14)
+
+1. Satu akun sekarang bisa menerima Web Push di HP DAN laptop sekaligus.
+   Sebelumnya saat laptop subscribe, subscription HP dihapus oleh server.
+2. Notifikasi staf untuk pengajuan peminjaman sekarang mencantumkan:
+   - Nama anggota
+   - Judul buku
+   - Status menunggu persetujuan
+3. Pengajuan pengembalian juga mencantumkan nama anggota dan buku.
+4. Broadcast staf dicegah dari notifikasi ganda pada endpoint perangkat yang sama.
+5. Toast notifikasi di website dibuat lebih jelas seperti notifikasi aplikasi dan dapat diklik.
+6. Service Worker tidak lagi meng-unregister semua Service Worker lain saat aktivasi push.
+7. Footer dashboard/site sudah mencantumkan copyright:
+   © 2026 Sistem perpustakaan digital sdn kalidadap 1. All rights reserved by irfan dwi ariyanto XII RPL 2 SMK N 1 Sanden.
+
+UPDATE v14 (21 Sep 2026 siang):
+8. Service Worker ditingkatkan ke v14:
+   - requireInteraction: true → notifikasi tidak hilang sendiri, harus ditutup user.
+   - Body & title dibaca lebih robust (JSON / text).
+   - Tambah tombol aksi "Buka" / "Tutup".
+   - Getaran singkat di Android.
+9. Notifikasi lokal (saat tab terbuka) juga pakai requireInteraction + title yang jelas.
+10. WAJIB re-aktifkan push di HP dan laptop setelah upload file ini
+    (karena Service Worker berubah, subscription lama bisa kirim data kosong).
+
+CARA TEST HP + LAPTOP (PENTING!)
+
+A. Upload semua file yang diubah (sw.js, webpush.js, notif-realtime.js).
+
+B. Di HP:
+   - Buka situs di Chrome → hapus data situs / clear site data (opsional tapi disarankan).
+   - Login akun staf.
+   - Tekan "Aktifkan Notif" / "Aktifkan push di perangkat ini".
+   - Izinkan notifikasi.
+
+C. Di laptop (Chrome):
+   - Login akun staf yang sama.
+   - Tekan "Aktifkan Notif".
+   - Izinkan notifikasi Chrome + pastikan Windows Notifications untuk Chrome ON.
+
+D. Setelah dua perangkat aktif, buat pengajuan peminjaman dari akun anggota.
+   HP dan laptop staf seharusnya menerima push dengan isi:
+   Judul: Pengajuan peminjaman baru
+   Isi  : Anggota: ... | Buku: "..." | Status: menunggu persetujuan petugas.
+
+Catatan:
+- Izin Web Push harus diaktifkan ulang di masing-masing perangkat setelah update SW.
+- Kalau di HP muncul notifikasi tapi isinya cuma "Perpustakaan" tanpa detail,
+  artinya payload gagal didekripsi → re-aktifkan push (unsubscribe otomatis saat klik tombol lagi).
+- Di laptop, kalau tab terbuka, notifikasi juga muncul lewat polling + system notification.

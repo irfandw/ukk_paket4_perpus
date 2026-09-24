@@ -1,0 +1,14 @@
+UKK PAKET 4 — UPDATE LENGKAP (dari ZIP asli)
+============================================
+Sudah digabung:
+1. Notifikasi Web Push v14 (HP + laptop, isi lengkap)
+2. Kondisi buku + keterangan (mis. halaman 10 hilang/sobek)
+3. PDF baca online (form + viewer)
+
+PASANG:
+1. Extract ZIP ini, upload ke hosting (timpa file lama)
+2. Jalankan 1_SQL_KONDISI_BUKU.sql di phpMyAdmin
+3. Re-aktifkan push di HP & laptop
+4. Edit buku → isi kondisi + keterangan + PDF
+
+Jika SQL error "Duplicate column" = kolom sudah ada, abaikan.

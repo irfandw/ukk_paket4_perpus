@@ -1,0 +1,45 @@
+========================================
+ PERPUSTAKAAN DIGITAL SDN 1 KALIDADAP
+ Cara Pakai (versi optimasi)
+========================================
+
+A. DATABASE
+1. phpMyAdmin → Import: database/DB_LENGKAP_DENGAN_ADMIN.sql
+2. (Opsional foto profil) database/ADD_FOTO_PROFIL.sql
+3. (Opsional UKK) database/ukk_sql_objects.sql
+
+   Akun default (ganti password setelah login):
+   Admin   : admin@sdn1kalidadap.sch.id / Admin123!
+   Petugas : petugas@sdn1kalidadap.sch.id / Admin123!
+   Anggota : anggota@sdn1kalidadap.sch.id / Admin123!
+
+B. LOCALHOST (XAMPP)
+1. Extract ke htdocs/perpustakaan-digital
+2. Sesuaikan .env (DB root, tanpa password biasanya)
+3. php artisan key:generate (jika APP_KEY kosong)
+4. Permission storage & bootstrap/cache
+5. php artisan serve
+
+C. INFINITYFREE
+1. Upload SEMUA isi folder ke htdocs (termasuk vendor)
+2. Pastikan ada .htaccess di root htdocs (rewrite ke /public)
+3. Edit .env: APP_URL, APP_KEY, DB_* dari panel
+4. Import SQL
+5. Permission 755: storage/, bootstrap/cache/, public/uploads/
+6. Login staf: /staf-login | Anggota: /login/anggota
+
+D. FITUR UTAMA
+- Katalog + grafik statistik beranda
+- Pinjam/kembali online
+- Kartu anggota (cetak) + foto profil
+- Laporan harian/mingguan/bulanan + cetak struk (admin/petugas)
+- Edit profil (semua role)
+
+E. JIKA ERROR 500 / 502
+- APP_KEY terisi, vendor ada
+- DB sudah import (tabel pengguna)
+- storage writable
+- Sementara APP_DEBUG=true untuk lihat error
+- 502 openresty: cek server IF / .htaccess / PHP timeout
+
+Lihat juga: OPTIMASI.txt | docs/

@@ -1,0 +1,24 @@
+FULL ZIP = ZIP ASLI + PERBAIKAN BUG
+====================================
+Dasar: UKK_PAKET-4_PERPUSTAKAAN_SDN-KALIDADAP-1.zip (asli Anda)
+Vendor: TIDAK diubah (utuh, tidak error 500)
+
+Perbaikan yang digabung:
+1. Kartu anggota lengkap (NIS, kelas, email, telepon, alamat, foto)
+2. Tombol Kembali kartu = link nyata (bukan history.back)
+3. Edit profil + foto profil (max 10 MB) → public/uploads/avatars
+4. Login anggota/staf modern
+5. Beranda: grafik pengunjung, pinjam, kembali (Chart.js)
+6. Laporan harian/mingguan/bulanan (admin + petugas) + cetak laporan
+7. Cetak struk transaksi
+8. .htaccess root untuk InfinityFree
+9. Section "Baca PDF Online" di beranda dihapus (PDF tetap di detail buku)
+
+Deploy InfinityFree:
+1. Upload SEMUA ke htdocs
+2. .env → APP_URL=https://peminjamanbuku.infinityfreeapp.com
+3. .env → DB_* dari panel MySQL
+4. Import database/DB_LENGKAP_DENGAN_ADMIN.sql
+5. Opsional: database/ADD_FOTO_PROFIL.sql
+6. Permission 755: storage, bootstrap/cache, public/uploads
+7. Setelah OK: APP_DEBUG=false

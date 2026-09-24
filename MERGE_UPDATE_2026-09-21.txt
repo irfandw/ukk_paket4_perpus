@@ -1,0 +1,18 @@
+MERGE UPDATE - 21 SEPTEMBER 2026
+
+Isi paket:
+1. Base aplikasi Laravel dari paket siap-hosting.
+2. Perbaikan notifikasi dari paket FIX-NOTIF sudah diintegrasikan ke controller API yang benar-benar dipakai routes/web.php.
+3. Polling notifikasi mendukung after_id + items/max_id, sehingga popup hanya muncul untuk notifikasi baru.
+4. Service Worker dan Web Push diselaraskan ke v18.
+5. Menghindari notifikasi sistem ganda saat Service Worker mengirim pesan ke tab.
+6. Folder storage/framework/views dibuat agar VIEW_COMPILED_PATH tidak menghasilkan error "View path not found".
+7. Tampilan diperbarui: glass navbar, kartu lebih modern, hover/spacing lebih halus, mobile bottom navigation, dan theme toggle disimpan di browser.
+8. File CSS baru: public/assets/css/modern.css.
+
+UPLOAD:
+- Upload isi folder proyek ini ke hosting, termasuk folder public, app, resources, routes, storage, dan vendor.
+- Pastikan document root hosting mengarah ke folder public jika hosting mendukung.
+- Jika hosting shared mengharuskan index.php di root, ikuti struktur siap-hosting yang sudah ada.
+- Setelah upload, login lalu aktifkan notifikasi di setiap perangkat (HP dan laptop).
+- Untuk error cache Blade lama, hapus cache framework jika hosting menyediakan terminal; folder storage/framework/views sudah disiapkan.

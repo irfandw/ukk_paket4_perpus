@@ -1,0 +1,18 @@
+CATATAN PENTING
+===============
+JANGAN menghapus folder vendor/phpunit secara manual — akan merusak
+autoload Composer dan menyebabkan HTTP 500.
+
+Setelah upload ke InfinityFree:
+1. Pastikan vendor/ utuh (hasil extract zip ini)
+2. .env → APP_URL = https://peminjamanbuku.infinityfreeapp.com
+3. .env → DB_* sesuai panel InfinityFree
+4. Import database/DB_LENGKAP_DENGAN_ADMIN.sql
+5. Permission 755: storage/, bootstrap/cache/, public/uploads/
+6. Setelah stabil: APP_DEBUG=false
+
+Error 500 biasanya:
+- vendor rusak / tidak lengkap
+- APP_KEY kosong
+- DB host/user/password salah
+- storage tidak writable

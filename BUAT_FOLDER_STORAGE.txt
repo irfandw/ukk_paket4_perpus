@@ -1,0 +1,15 @@
+JIKA ERROR session di InfinityFree, buat folder ini di File Manager (htdocs):
+
+storage/framework/sessions
+storage/framework/views
+storage/framework/cache
+storage/framework/cache/data
+storage/logs
+bootstrap/cache
+
+Permission: 755 atau 777
+
+Di .env pastikan:
+SESSION_DRIVER=file
+CACHE_DRIVER=file
+APP_DEBUG=false

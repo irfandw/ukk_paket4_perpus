@@ -1,0 +1,42 @@
+========================================
+ FITUR BARU: Kartu Anggota + Pengaturan
+========================================
+
+1. KARTU ANGGOTA (cetak)
+   - Staf/Admin: menu Anggota Cari → tombol "Cetak" per baris
+     atau "Cetak Semua Aktif"
+   - URL: /anggota-kartu  (semua aktif, max 50)
+           /anggota-kartu/{id}  (satu anggota)
+   - Anggota login: Dashboard → "Kartu Saya"  (/kartu-saya)
+   - Desain ukuran kartu ATM, print-friendly (Ctrl+P)
+   - QR Code berisi NIS + nama
+   - Data library (nama, alamat, warna, footer, masa berlaku)
+     diambil dari Pengaturan → bisa diubah kapan saja
+
+2. PENGATURAN (bisa diubah)
+   Admin → Pengaturan, bagian baru:
+   - Kartu Anggota
+      · Masa berlaku (tahun)
+      · Warna kartu (color picker)
+      · Tampilkan QR Code (Ya/Tidak)
+      · Teks footer kartu
+
+Catatan: fitur Rekomendasi Open Library TIDAK dipakai.
+
+FILE YANG DITAMBAH / DIUBAH
+  + resources/views/members/kartu.blade.php
+  ~ app/Http/Controllers/MemberController.php
+  ~ app/Http/Controllers/SettingController.php
+  ~ app/Models/Setting.php
+  ~ resources/views/settings/index.blade.php
+  ~ resources/views/members/index.blade.php
+  ~ resources/views/dashboard/anggota.blade.php
+  ~ routes/web.php
+
+Tidak perlu migrasi database baru — setting disimpan di tabel
+pengaturan (key-value) yang sudah ada.
+
+Cara uji cepat:
+  1. Login admin → Pengaturan → ubah warna kartu & footer → Simpan
+  2. Login petugas → Anggota Cari → Cetak kartu
+  3. Login anggota → Dashboard → Kartu Saya
