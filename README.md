@@ -8,8 +8,8 @@
 
 | Item              | Keterangan                                      |
 |-------------------|-------------------------------------------------|
-| **Nama Peserta**  | [Isi Nama Lengkap Anda]                         |
-| **Kelas**         | [Isi Kelas, contoh: XII RPL 1]                  |
+| **Nama Peserta**  | [irfan dwi ariyanto]                         |
+| **Kelas**         | [XII RPL 2]                  |
 | **Judul Project** | Aplikasi Perpustakaan Digital SDN 1 Kalidadap   |
 | **Studi Kasus**   | Sistem peminjaman, pengembalian, denda, katalog, notifikasi, dan laporan perpustakaan sekolah |
 | **Paket Soal**    | [Sesuaikan, contoh: P4 – Perpustakaan]          |
