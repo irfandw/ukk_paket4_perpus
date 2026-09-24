@@ -189,6 +189,7 @@ Gunakan akun berikut untuk pengujian oleh asesor:
 - **Local**     : `php artisan serve` → http://127.0.0.1:8000
 - **Hosting**   : [https://perpustakaan-sdnkldp1.infinityfreeapp.com/](https://perpustakaan-sdnkldp1.infinityfreeapp.com/)
 - **QR Code**   : Arahkan ke URL di atas → https://perpustakaan-sdnkldp1.infinityfreeapp.com/
+- **Db Sql**    : ukk_paket_4_perpus.sql
 
 ---
 
