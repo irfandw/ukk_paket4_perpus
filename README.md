@@ -190,6 +190,7 @@ Gunakan akun berikut untuk pengujian oleh asesor:
 - **Hosting**   : [https://perpustakaan-sdnkldp1.infinityfreeapp.com/](https://perpustakaan-sdnkldp1.infinityfreeapp.com/)
 - **QR Code**   : Arahkan ke URL di atas → https://perpustakaan-sdnkldp1.infinityfreeapp.com/
 - **Db Sql**    : ukk_paket_4_perpus.sql
+- **dokumen**   : DOKUMEN_UKK_PERPUSTAKAAN_DIGITAL_LARAVEL_2026.docx
 
 ---
 
