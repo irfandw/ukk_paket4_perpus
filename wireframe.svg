@@ -1,0 +1,136 @@
+<svg viewBox="0 0 1300 950" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <style>
+    .frame { fill:#ffffff; stroke:#2d4059; stroke-width:2; }
+    .bar { fill:#2d4059; }
+    .box { fill:#eef3f8; stroke:#8ba0b3; stroke-width:1.2; }
+    .box2 { fill:#fdf3e7; stroke:#c9622a; stroke-width:1.2; }
+    .btn { fill:#c9622a; }
+    .lbl { fill:#2d4059; font-size:13px; }
+    .title { fill:#2d4059; font-size:18px; font-weight:bold; }
+    .cap { fill:#5b6b7a; font-size:11px; }
+    .placeholder { fill:#dfe6ec; stroke:#b7c4cf; stroke-dasharray:4,3; }
+  </style>
+
+  <rect width="1300" height="950" fill="#f7f9fb"/>
+  <text x="20" y="30" class="title">Wireframe / Mockup UI - Perpustakaan Digital (Low-Fidelity)</text>
+
+  <!-- LOGIN PAGE -->
+  <g transform="translate(20,60)">
+    <text x="0" y="0" class="lbl" font-weight="bold">1. Halaman Login</text>
+    <rect x="0" y="10" width="600" height="400" class="frame"/>
+    <rect x="0" y="10" width="600" height="36" class="bar"/>
+    <text x="15" y="34" fill="white" font-size="13">Perpustakaan Digital</text>
+    <rect x="200" y="90" width="200" height="26" class="box"/>
+    <text x="210" y="107" class="cap">[ Logo Sekolah ]</text>
+    <rect x="150" y="140" width="300" height="30" class="box"/>
+    <text x="160" y="160" class="cap">Username</text>
+    <rect x="150" y="182" width="300" height="30" class="box"/>
+    <text x="160" y="202" class="cap">Password</text>
+    <rect x="150" y="228" width="300" height="34" class="btn"/>
+    <text x="260" y="250" fill="white" font-size="12">LOGIN</text>
+    <text x="200" y="290" class="cap">Belum punya akun? Register</text>
+    <text x="180" y="320" class="cap">Login khusus Petugas: staf-login.php</text>
+  </g>
+
+  <!-- DASHBOARD SISWA -->
+  <g transform="translate(660,60)">
+    <text x="0" y="0" class="lbl" font-weight="bold">2. Dashboard Anggota (Siswa)</text>
+    <rect x="0" y="10" width="620" height="400" class="frame"/>
+    <rect x="0" y="10" width="620" height="36" class="bar"/>
+    <text x="15" y="34" fill="white" font-size="13">Sidebar | Header | Notifikasi</text>
+    <rect x="0" y="46" width="120" height="364" class="box"/>
+    <text x="10" y="65" class="cap">Menu:</text>
+    <text x="10" y="85" class="cap">- Katalog</text>
+    <text x="10" y="103" class="cap">- Pinjam</text>
+    <text x="10" y="121" class="cap">- Riwayat</text>
+    <text x="10" y="139" class="cap">- Favorit</text>
+    <text x="10" y="157" class="cap">- Notifikasi</text>
+    <text x="10" y="175" class="cap">- Help</text>
+    <rect x="132" y="56" width="230" height="70" class="box2"/>
+    <text x="140" y="76" class="cap">Buku Dipinjam: 2</text>
+    <text x="140" y="96" class="cap">Jatuh Tempo: 3 hari lagi</text>
+    <rect x="372" y="56" width="230" height="70" class="box2"/>
+    <text x="380" y="76" class="cap">Denda Aktif: Rp 0</text>
+    <rect x="132" y="136" width="470" height="130" class="box"/>
+    <text x="140" y="156" class="cap">Grafik / Buku Populer (chart-bars)</text>
+    <rect x="150" y="170" width="20" height="70" fill="#c9622a"/>
+    <rect x="190" y="190" width="20" height="50" fill="#c9622a"/>
+    <rect x="230" y="150" width="20" height="90" fill="#c9622a"/>
+    <rect x="270" y="200" width="20" height="40" fill="#c9622a"/>
+    <rect x="132" y="276" width="470" height="120" class="box"/>
+    <text x="140" y="296" class="cap">Koleksi Buku Baru (card list)</text>
+    <rect x="140" y="308" width="80" height="80" class="placeholder"/>
+    <rect x="232" y="308" width="80" height="80" class="placeholder"/>
+    <rect x="324" y="308" width="80" height="80" class="placeholder"/>
+    <rect x="416" y="308" width="80" height="80" class="placeholder"/>
+  </g>
+
+  <!-- KATALOG -->
+  <g transform="translate(20,500)">
+    <text x="0" y="0" class="lbl" font-weight="bold">3. Katalog / Cari Buku</text>
+    <rect x="0" y="10" width="600" height="400" class="frame"/>
+    <rect x="0" y="10" width="600" height="36" class="bar"/>
+    <text x="15" y="34" fill="white" font-size="13">Header + Search Bar</text>
+    <rect x="20" y="58" width="440" height="30" class="box"/>
+    <text x="30" y="78" class="cap">[ Cari judul / pengarang... ]</text>
+    <rect x="470" y="58" width="110" height="30" class="btn"/>
+    <text x="490" y="78" fill="white" font-size="11">CARI</text>
+    <rect x="20" y="100" width="110" height="26" class="box2"/>
+    <text x="28" y="118" class="cap">Filter Kategori</text>
+
+    <!-- card grid -->
+    <g>
+      <rect x="20" y="140" width="130" height="170" class="box"/>
+      <rect x="30" y="150" width="110" height="90" class="placeholder"/>
+      <text x="30" y="256" class="cap">Judul Buku</text>
+      <text x="30" y="270" class="cap">★★★★☆ (12 ulasan)</text>
+      <rect x="30" y="278" width="60" height="18" class="box2"/><text x="35" y="291" font-size="9" class="cap">Tersedia</text>
+    </g>
+    <g transform="translate(150,0)">
+      <rect x="20" y="140" width="130" height="170" class="box"/>
+      <rect x="30" y="150" width="110" height="90" class="placeholder"/>
+      <text x="30" y="256" class="cap">Judul Buku</text>
+      <text x="30" y="270" class="cap">★★★☆☆ (5 ulasan)</text>
+      <rect x="30" y="278" width="60" height="18" class="box2"/><text x="35" y="291" font-size="9" class="cap">Tersedia</text>
+    </g>
+    <g transform="translate(300,0)">
+      <rect x="20" y="140" width="130" height="170" class="box"/>
+      <rect x="30" y="150" width="110" height="90" class="placeholder"/>
+      <text x="30" y="256" class="cap">Judul Buku</text>
+      <text x="30" y="270" class="cap">★★★★★ (20 ulasan)</text>
+      <rect x="30" y="278" width="60" height="18" fill="#fbe1e1" stroke="#c0392b"/><text x="35" y="291" font-size="9" class="cap">Habis</text>
+    </g>
+    <g transform="translate(450,0)">
+      <rect x="20" y="140" width="130" height="170" class="box"/>
+      <rect x="30" y="150" width="110" height="90" class="placeholder"/>
+      <text x="30" y="256" class="cap">Judul Buku</text>
+      <text x="30" y="270" class="cap">★★★★☆ (8 ulasan)</text>
+      <rect x="30" y="278" width="60" height="18" class="box2"/><text x="35" y="291" font-size="9" class="cap">Tersedia</text>
+    </g>
+    <text x="20" y="345" class="cap">Footer: pagination, copyright, kontak</text>
+  </g>
+
+  <!-- DETAIL BUKU -->
+  <g transform="translate(660,500)">
+    <text x="0" y="0" class="lbl" font-weight="bold">4. Detail Buku + Pinjam + Ulasan</text>
+    <rect x="0" y="10" width="620" height="400" class="frame"/>
+    <rect x="0" y="10" width="620" height="36" class="bar"/>
+    <text x="15" y="34" fill="white" font-size="13">Header</text>
+    <rect x="20" y="60" width="160" height="220" class="placeholder"/>
+    <text x="55" y="175" class="cap">[ Cover Buku ]</text>
+    <text x="200" y="80" class="lbl" font-weight="bold">Judul Buku Panjang</text>
+    <text x="200" y="100" class="cap">Pengarang: Nama Penulis</text>
+    <text x="200" y="118" class="cap">ISBN: 978-xxx | Rak: A1</text>
+    <text x="200" y="136" class="cap">★★★★☆ 4.2/5 (12 ulasan)</text>
+    <rect x="200" y="150" width="60" height="20" class="box2"/><text x="207" y="164" font-size="10" class="cap">3 tersedia</text>
+    <rect x="200" y="180" width="380" height="60" class="box"/>
+    <text x="208" y="198" class="cap" font-size="10">Sinopsis singkat buku ditampilkan di sini,</text>
+    <text x="208" y="212" class="cap" font-size="10">maksimal beberapa baris deskripsi...</text>
+    <rect x="200" y="252" width="120" height="30" class="box"/><text x="210" y="271" class="cap" font-size="10">Lama pinjam ▾</text>
+    <rect x="330" y="252" width="120" height="30" class="btn"/><text x="352" y="271" fill="white" font-size="11">PINJAM</text>
+    <rect x="20" y="296" width="580" height="30" class="box2"/>
+    <text x="28" y="315" class="cap" font-size="10">Beri rating: ★★★★★  + kotak komentar + tombol Kirim</text>
+    <rect x="20" y="334" width="580" height="60" class="box"/>
+    <text x="28" y="352" class="cap" font-size="10">Ulasan pembaca lain: "Bagus sekali..." - Nama, ★★★★★</text>
+  </g>
+</svg>
